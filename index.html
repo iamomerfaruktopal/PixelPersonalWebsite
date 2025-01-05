@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-text">LOADING</div>
+            <div class="loading-bar">
+                <div class="loading-bar-fill"></div>
+            </div>
+            <div class="loading-status">INITIALIZING SYSTEM...</div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="status-bar">
+            <div class="player-info">
+                <div class="pixel-icon heart"></div>
+                <span class="lives">Istanbul Technical University</span>
+                <div class="pixel-icon coin"></div>
+                <span class="score">ITU Rover</span>
+                <div class="pixel-icon clock"></div>
+                <span class="time" id="localTime">00:00</span>
+            </div>
+            <div class="energy-bar">
+                <div class="energy-fill"></div>
+                <div class="pixel-border-top"></div>
+                <div class="pixel-border-bottom"></div>
+            </div>
+        </div>
+
+        <div class="game-screen">
+            <header class="game-header">
+                <div class="title-screen">
+                    <div class="pixel-logo glitch" data-text="YOUR NAME">Ömer Faruk Topal</div>
+                    <div class="character-container">
+                        <div class="character-sprite"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <p class="title">Part Time humans, Full Time Robotsi</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-label">Designing and improving the parts of the ITU AXA Rover. Creating new solutions for different tasks in various International Challenges like URC,ERC,ARC.</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label"></span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label"></span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="game-content">
+                <div class="menu-select">
+                    <h2 class="pixel-text">SELECT PROFILE</h2>
+                    
+                    <div class="menu-item pixel-box">
+                        <div class="selector pixel-arrow">►</div>
+                        <div class="quest-icon world-1"></div>
+                        <div class="quest-content">
+                            <h3>SKILLS & TECH STACK</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-icon js"></div>
+                                    <span>3D Modeling</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon react"></div>
+                                    <span>CAD Designs</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon node"></div>
+                                    <span>Autodesk Fusion 360</span>
+                                </div>
+                                <!-- Add more skills -->
+                            </div>
+                            <div class="pixel-progress">
+                                <div class="progress-fill"></div>
+                                <div class="progress-pixels"></div>
+                            </div>
+                            <span class="exp">MASTERY: %utilizing skills in the projects</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item pixel-box">
+                        <div class="selector pixel-arrow">►</div>
+                        <div class="quest-icon world-2"></div>
+                        <div class="quest-content">
+                            <h3>FEATURED PROJECTS</h3>
+                            <div class="project-grid">
+                                <div class="project-card" onclick="showProjectDetails(1)">
+                                    <h4>Custom Website Designs for everybody</h4>
+                                    <p>Full-stack web applications</p>
+                                    <div class="project-tech">
+                                        <span>JavaScript</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                                <!-- Add more projects -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item pixel-box">
+                        <div class="selector pixel-arrow">►</div>
+                        <div class="quest-icon bonus"></div>
+                        <div class="quest-content">
+                            <h3>CONTACT & SOCIALS</h3>
+                            <div class="contact-form">
+                                <input type="text" placeholder="YOUR NAME" class="pixel-input">
+                                <input type="email" placeholder="YOUR EMAIL" class="pixel-input">
+                                <textarea placeholder="YOUR MESSAGE" class="pixel-input"></textarea>
+                                <button class="pixel-button">SEND MESSAGE</button>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://github.com/iamomerfaruktopal" target="_blank" class="social-icon github">GITHUB</a>
+                                <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-topal-2237b8209/" target="_blank" class="social-icon linkedin">LINKEDIN</a>
+                                <a href="mailto:topalo24@itu.edu.tr" class="social-icon email">EMAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-footer">
+                <div class="controls">
+                    <div class="control-item">
+                        <div class="pixel-key">⬆️</div>
+                        <span>NAV UP</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="pixel-key">⬇️</div>
+                        <span>NAV DOWN</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="pixel-key">A</div>
+                        <span>SELECT</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="pixel-key">B</div>
+                        <span>BACK</span>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <div class="achievement-badge" title="Code Master">🏆</div>
+                    <div class="achievement-badge" title="Bug Hunter">🐛</div>
+                    <div class="achievement-badge" title="Design Guru">🎨</div>
+                </div>
+                <p class="copyright">©2024 Ömerinyo Faruko Topalus - ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("your_public_key");
+        })();
+    </script>
+    
+        <!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/mjkkoqkr"
+method="POST"
+>
+
+<!-- your other form fields go here -->
+<button type="submit">Send</button>
+</form>
+</body>
+</html> 
